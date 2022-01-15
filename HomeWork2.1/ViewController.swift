@@ -19,15 +19,24 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mainLabelColor.backgroundColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
+        mainLabelColor.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
         // Do any additional setup after loading the view.
     }
     
     @IBAction func redSliderAction(_ sender: Any) {
         redAmountLabel.text = String(Int(redSlider.value))
-        mainLabelColor.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: 255, blue: 255, alpha: 1)
+        mainLabelColor.backgroundColor = UIColor(red: CGFloat(redSlider.value)/255, green: CGFloat(greenSlider.value)/255, blue: CGFloat(blueSlider.value)/255, alpha: 1)
     }
     
+    @IBAction func greenSliderAction(_ sender: Any) {
+        greenAmountLabel.text = String(Int(greenSlider.value))
+        mainLabelColor.backgroundColor = UIColor(red: CGFloat(redSlider.value)/255, green: CGFloat(greenSlider.value)/255, blue: CGFloat(blueSlider.value)/255, alpha: 1)
+    }
+    
+    @IBAction func blueSliderAction(_ sender: Any) {
+        blueAmountLabel.text = String(Int(blueSlider.value))
+        mainLabelColor.backgroundColor = UIColor(red: CGFloat(redSlider.value)/255, green: CGFloat(greenSlider.value)/255, blue: CGFloat(blueSlider.value)/255, alpha: 1)
 
+    }
 }
 

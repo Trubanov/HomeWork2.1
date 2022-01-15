@@ -77,11 +77,17 @@
                                 <rect key="frame" x="116" y="212" width="191" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.46025969210000001" green="0.96726050509999995" blue="0.96272722359999996" alpha="0.85815263610000003" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="maximumTrackTintColor" red="0.069705121460000005" green="0.3003855003" blue="0.55690290200000003" alpha="0.85815263610000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="greenSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="WN3-et-eeQ"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Oro-fE-Rxp">
                                 <rect key="frame" x="116" y="248" width="190" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.46025969210000001" green="0.96726050509999995" blue="0.96272722359999996" alpha="0.85815263610000003" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="maximumTrackTintColor" red="0.069705121460000005" green="0.3003855003" blue="0.55690290200000003" alpha="0.85815263610000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="blueSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="mNQ-uJ-sfS"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
